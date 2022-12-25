@@ -1,0 +1,37 @@
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.rel-block{
+	max-width: 100%;
+	background-color: greenyellow;
+	height: 400px;
+	position: relative;
+}
+
+.abs-block{
+	width: 50px;
+	height: 30px;
+	background-color: blue;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+@media screen and (max-width: 768px){
+	.abs-block{
+		height: 100%;
+		right: 0;
+		bottom: 0;
+	}	
+}
+
+@media screen and (max-width: 450px){
+	.abs-block{
+		height: 30px;
+		width: 100%;
+	}	
+}
